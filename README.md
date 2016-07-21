@@ -16,4 +16,4 @@ Icon made by <a title="Freepik" href="http://www.freepik.com">Freepik</a> from <
 
 ## License
 
-gibberish is available under the MIT license. See the LICENSE file for more info.
+TSOBounder is available under the MIT license. See the LICENSE file for more info.
