@@ -36,15 +36,11 @@ def main(argv):
         # Coarse Grained
         print('Calculating TSO size (CoarseGrained)...')
         sizeArray, meanTime = calculateTSOSizeCoarseGrained()
-        linearPlot = numpy.poly1d(numpy.polyfit(sizeArray, meanTime, 1))(sizeArray)
-        stepsPlot = [1 if x > linearPlot[i] else 0 for i, x in enumerate(meanTime)]
 
         saveResults(meanTime, 'coarse')
 
         print('Plotting Coarse Grained results')
         plt.plot(sizeArray, meanTime)
-        plt.plot(sizeArray, linearPlot)
-        plt.plot(sizeArray, stepsPlot)
         plt.title('Coarse Grained results')
         plt.ylabel('Process Time')
         plt.xlabel('# Bytes Written')
