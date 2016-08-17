@@ -4,6 +4,8 @@
 
 # TSOBounder
 
+Academic research in the field of **parallel programming**, Tel Aviv University.
+
 ## 1 Abstract
 This work address the issue of bounding a total store ordering (TSO) memory. The issue was introduced in Afek’s and Morrison’s paper “Fence-Free Work Stealing on Bounded TSO Processors” [1]. Their paper introduce a major optimisation to the “Work Stealing” method, demonstrating work stealing algorithms in which a worker does not issue a memory fence for microarchitectures with a bounded total store ordering (TSO) memory model.
 <br>
